@@ -1,4 +1,3 @@
-import { cursorTo } from "readline";
 import { curioso } from "./curioso.model";
 
 export class paciente extends curioso{

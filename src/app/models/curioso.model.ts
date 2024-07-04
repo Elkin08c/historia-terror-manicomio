@@ -40,13 +40,19 @@ export class curioso {
     }
 
     fin2(){
-        return ` ${this.name},Un vórtice de energía oscura giraba en el centro de la habitación.
-"¡Lo he liberado!", gritó el doctor antes de desmayarse en ${this.city}`
+        return ` ${this.name},Entonces, las sombras se materializaron en formas grotescas y los espectros emergieron de las sombras. Gritos de angustia llenaron el aire mientras los jóvenes corrían en pánico por los pasillos ahora distorsionados y retorcidos. Pero era demasiado tarde.
+        La última imagen que quedó grabada en sus mentes fue la de un rostro pálido y sin ojos que los observaba desde la oscuridad antes de que el asilo se desvaneciera en una niebla negra. 
+        Nunca se encontraron rastros de los jóvenes valientes, pero se dice que sus voces todavía susurran entre las sombras, advirtiendo a los curiosos de no desafiar el sueño eterno de los que yacen en el asilo maldito en ${this.city}`
     }
 }
 
-export class espiritu extends curioso {
+export class investigador extends curioso {
     override fin1(): string{
-        return `Al bajar las escaleras, encontró al Dr. Blackwood en medio de n círculo de velas, con un antiguo grimorio en sus manos y una expresión de terror en su rostro.`
+        return `En las profundidades del oscuro bosque, rodeado de árboles retorcidos y silenciosos, 
+        se alzaba el antiguo asilo maldito. 
+        Sus paredes de piedra grisácea parecían susurrar historias de sufrimiento y desesperación. 
+        Durante décadas, las leyendas sobre almas perdidas y espectros atormentados habían mantenido alejados a los lugareños, hasta que un grupo de jóvenes audaces decidió desafiar el tabú.
+        Guiados por la curiosidad y la adrenalina, ingresaron al asilo en una noche de luna llena. A medida que avanzaban por los pasillos cubiertos de polvo y sombras, 
+        comenzaron a escuchar susurros lejanos y risas desgarradoras que parecían provenir de la nada. Luces intermitentes iluminaban brevemente figuras borrosas que desaparecían en las esquinas.`
     }
 }

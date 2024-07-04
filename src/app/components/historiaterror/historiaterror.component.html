@@ -1,1 +1,28 @@
-<p>historiaterror works!</p>
+<nz-card>
+    <ng-container [ngSwitch]="sections[currentIndex]">
+        <div *ngSwitchCase="'intro'" class= "intro-container">
+            <h1>Introduction</h1>
+            <p>{{introMessage}}</p>
+        </div>
+
+        <div *ngSwitchCase="'development'" class="development-container">
+            <h1>Desarollo</h1>
+            <p>{{dia1Message}} {{nameMargarita}}, {{nameMarianita}}su rol es {{rolMargarita}}, {{rolMarianita}}
+            {{dia2Message}} {{nameEsteban}}, {{namePablo}}, son guardianes {{dia3Message}}
+            {{nameArmando}} y su comañero {{namePaquito}}, los espiritus, {{dia4Message}}
+            {{nameEnrique}}, {{roleEnrique}} y {{nameAlexander}}, {{rolAlexander}}, {{dia5Message}}
+            {{nameDiana}}, {{rolDiana}} y {{nameMajito}}, {{rolMajito}}, {{dia6Message}}, {{dia7Message}}</p>
+        </div>
+
+        <div *ngSwitchCase="'fin'" class="fin-container">
+            <h2>Fin de la Historia</h2>
+            <p>{{fin1Message}} {{nameJuanPerez}}, y su rol es {{rolJuanPerez}} 
+                {{fin2Message}} {{nameMario}}, {{nameMartita}}, {{namePamela}}</p>
+        </div>
+    </ng-container>
+
+    <div class="navvegacion-buttons">
+        <button nz-button nzType="primary" (click)="prev()" [disabled]="currentIndex === 0">Anterior texto</button>
+        <button nz-button nzType="primary" (click)="next()" [disabled]="currentIndex === sections.length - 1">Siguiente parte</button>
+    </div>
+</nz-card>
